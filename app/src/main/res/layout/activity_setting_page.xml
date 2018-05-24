@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jiashuwu.neurograph.SettingPageActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:title="@string/welcon_to_neurograph_label"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/setting_page_welcome_textview"
+            android:text="@string/welcome"
+            android:textSize="26dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/setting_page_language_textview"
+            android:text="@string/setting_page_choose_language"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@id/setting_page_welcome_textview"/>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setting_page_language_textview"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/setting_page_language_spinner"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/setting_page_font_size_textview"
+            android:layout_below="@id/setting_page_language_spinner"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="@string/setting_page_choose_font_size"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setting_page_font_size_textview"
+            android:id="@+id/setting_page_font_size_spinner"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setting_page_font_size_spinner"
+            android:id="@+id/setting_page_button_group_linearlayout"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_page_start_button"
+                android:layout_weight="1"
+                android:id="@+id/setting_page_start_button"
+                android:layout_marginRight="6dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/data_list_button"
+                android:layout_weight="1"
+                android:id="@+id/setting_page_data_list_button"
+                android:layout_marginLeft="6dp"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/setting_page_button_group_linearlayout1"
+            android:layout_below="@id/setting_page_button_group_linearlayout"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <Button
+                android:id="@+id/setting_page_introduction_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:text="@string/button_introduction" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="6dp"
+                android:id="@+id/setting_page_tutorial_button"
+                android:text="@string/button_tutorial" />
+
+        </LinearLayout>
+
+        <!--
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="trigger"
+            android:id="@+id/triggerrrrrrrrrrr"
+            android:layout_marginTop="100dp" />
+            -->
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_practice_tests"
+        android:icon="@drawable/ic_action_circle_point"
+        android:title="@string/dot_and_line" />
+
+    <item
+        android:id="@+id/navigation_static_tests"
+        android:icon="@drawable/ic_action_static_light1"
+        android:title="@string/static_tests" />
+
+    <item
+        android:id="@+id/navigation_dynamic_tests"
+        android:icon="@drawable/ic_action_dynamic_light"
+        android:title="@string/dynamic_tests" />
+
+
+
+
+</menu>

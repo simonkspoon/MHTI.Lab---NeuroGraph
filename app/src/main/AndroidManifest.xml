@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jiashuwu.neurograph">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- DONE ICON:  for android:icon and android:roundIcon -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_new"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_new_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".WelcomeActivity"
+            android:configChanges="locale|fontScale"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingPageActivity"
+            android:configChanges="locale|fontScale"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".InformationCollectionActivity"
+            android:configChanges="locale|fontScale"
+            android:label="@string/title_activity_information_collection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TestSelectionActivity"
+            android:configChanges="locale|fontScale"
+            android:label="@string/tests"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ImageSelectionActivity"
+            android:configChanges="locale|fontScale"
+            android:label="@string/title_activity_image_selection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DurationSelectionActivity"
+            android:configChanges="locale|fontScale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StaticBackgroundTestActivity"
+            android:configChanges="locale|fontScale"
+            android:screenOrientation="landscape"
+            android:theme="@style/activityTheme" />
+        <activity
+            android:name=".StaticCornerBackgroundTestActivity"
+            android:configChanges="locale|fontScale"
+            android:screenOrientation="landscape"
+            android:theme="@style/activityTheme" />
+        <activity
+            android:name=".DynamicBlankBackgroundTestActivity"
+            android:configChanges="locale|fontScale"
+            android:screenOrientation="landscape"
+            android:theme="@style/activityTheme" />
+        <activity
+            android:name=".DynamicShowBackgroundActivity"
+            android:configChanges="locale|fontScale"
+            android:screenOrientation="landscape"
+            android:theme="@style/activityTheme" />
+        <activity
+            android:name=".ThankYouActivity"
+            android:configChanges="locale|fontScale"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".DynamicSeasonalBackgroundTestActivity"
+            android:configChanges="locale|fontScale"
+            android:screenOrientation="landscape"
+            android:theme="@style/activityTheme" />
+        <activity
+            android:name=".DataListActivity"
+            android:configChanges="locale|fontScale"
+            android:label="@string/title_activity_data_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TestDetailScrollingActivity"
+            android:configChanges="locale|fontScale"
+            android:label="@string/test_information"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TransferActivity"
+            android:configChanges="locale|fontScale" />
+        <activity
+            android:name=".SendDataEmailActivity"
+            android:configChanges="locale|fontScale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StoreDataFileActivity"
+            android:configChanges="locale|fontScale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IntroductionPageActivity"
+            android:configChanges="locale|fontScale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ParallelLinePracticeActivity"
+            android:configChanges="locale|fontScale"
+            android:screenOrientation="landscape"
+            android:theme="@style/activityTheme" />
+        <activity
+            android:name=".ParallelLinePracticeResultActivity"
+            android:configChanges="locale|fontScale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ThankYouParallelActivity"
+            android:configChanges="locale|fontScale"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ParallelLineTestActivity"
+            android:configChanges="locale|fontScale"
+            android:screenOrientation="landscape"
+            android:theme="@style/activityTheme" />
+        <activity
+            android:name=".TransferTestSelectionActivity"
+            android:configChanges="locale|fontScale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DisplayProgressActivity"
+            android:configChanges="locale|fontScale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DisplaySendingActivity"
+            android:configChanges="locale|fontScale"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name=".MyReceiver">
+            <intent-filter>
+                <action android:name="com.example.jiashuwu.neurograph.action.MyReceiver" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".DisplayLoadingActivity"
+            android:configChanges="locale|fontScale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DisplayCalculatingActivity"
+            android:configChanges="locale|fontScale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".InfoActivity"
+            android:configChanges="locale|fontScale"
+            android:label="@string/information"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".StaticBackgroundTestNewActivity"
+            android:configChanges="locale|fontScale"
+            android:screenOrientation="landscape"
+            android:theme="@style/activityTheme" />
+        <activity
+            android:name=".CircularMotionTestActivity"
+            android:configChanges="locale|fontScale"
+            android:screenOrientation="landscape"
+            android:theme="@style/activityTheme" />
+        <activity
+            android:name=".ImageSelectionForCircularMotionActivity"
+            android:configChanges="locale|fontScale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FullHeightActivity"
+            android:configChanges="locale|fontScale"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_full_screen" />
+        <activity
+            android:name=".DeviceInformationActivity"
+            android:configChanges="locale|fontScale"
+            android:label="@string/device_information_label"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CopyrightInformationActivity"
+            android:configChanges="locale|fontScale"
+            android:label="@string/copyright"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PersonalInformationEditPageActivity"
+            android:configChanges="locale|fontScale"
+            android:label="@string/edit_information1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AccountCentreActivity"
+            android:configChanges="locale|fontScale"
+            android:label="@string/account_label"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PersonalInformationActivity"
+            android:configChanges="locale|fontScale"
+            android:label="@string/personal_information"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:label="@string/title_activity_feedback"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".TutorialActivity"
+            android:label="@string/title_activity_tutorial"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".IntroductionContentActivity"
+            android:label="@string/title_activity_introduction_content"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

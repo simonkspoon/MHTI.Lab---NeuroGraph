@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/list_item_test_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/test_1"
+            android:textSize="15sp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp" />
+
+        <TextView
+            android:id="@+id/list_item_tester_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_item_test_number"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:minLines="1"
+            android:maxLines="2"
+            android:text="@string/zhangsan"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_item_test_time"
+            android:layout_below="@+id/list_item_tester_name"
+            android:text="@string/test_date"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:textSize="15dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_item_test_type"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/test_type"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/list_item_image_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBaseline="@+id/list_item_test_time"
+            android:layout_alignBottom="@+id/list_item_test_time"
+            android:layout_alignRight="@+id/list_item_test_type"
+            android:layout_alignEnd="@+id/list_item_test_type"
+            android:text="@string/image_type"
+            android:textSize="15sp" />
+
+
+
+    </RelativeLayout>
+    
+</LinearLayout>

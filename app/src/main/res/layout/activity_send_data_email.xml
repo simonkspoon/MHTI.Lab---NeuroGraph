@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jiashuwu.neurograph.SendDataEmailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:title="@string/send_data_email_label"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/send_email_introduction_textview"
+                android:text="@string/data_output_via_email"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="90dp"
+                android:textSize="28dp"
+                android:layout_centerHorizontal="true"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/send_email_recipient_textview"
+                android:text="@string/recipient"
+                android:layout_below="@id/send_email_introduction_textview"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/send_email_recipient_edittext"
+                android:layout_below="@id/send_email_recipient_textview"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="@string/email_address_format_requirement"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/send_email_subject_textview"
+                android:layout_below="@id/send_email_recipient_edittext"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="@string/subject"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/send_email_subject_editview"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:hint="@string/subject_cannot_empty"
+                android:layout_below="@id/send_email_subject_textview"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_checkbox_message"
+                android:id="@+id/send_email_checkbox"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/send_email_subject_editview" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/send_data_email_file_type_textview"
+                android:text="@string/data_file_format_title"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/send_email_checkbox" />
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:id="@+id/send_data_email_help_imageview"
+                android:layout_alignEnd="@+id/send_data_email_readme_checkbox"
+                android:layout_alignRight="@+id/send_data_email_readme_checkbox"
+                android:layout_alignTop="@+id/send_data_email_file_type_textview"
+                android:src="@drawable/ic_action_help_empty" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/send_data_email_csv_checkbox"
+                android:text="@string/csv"
+                android:checked="true"
+                android:layout_below="@id/send_data_email_file_type_textview" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/send_data_email_csv_checkbox"
+                android:id="@+id/send_data_email_txt_checkbox"
+                android:text="@string/txt"
+                android:checked="true"
+                android:layout_below="@id/send_data_email_file_type_textview" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/send_data_email_txt_checkbox"
+                android:id="@+id/send_data_email_db_checkbox"
+                android:text="@string/db"
+                android:checked="true"
+                android:layout_below="@id/send_data_email_file_type_textview" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/send_data_email_db_checkbox"
+                android:id="@+id/send_data_email_readme_checkbox"
+                android:text="@string/readme"
+                android:checked="true"
+                android:layout_below="@id/send_data_email_file_type_textview" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/send_email_delete_title_textview"
+                android:text="@string/clean_data_after_storing_files"
+                android:layout_below="@id/send_data_email_csv_checkbox"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/send_email_delete_title_textview"
+                android:layout_below="@id/send_data_email_csv_checkbox"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/send_email_delete_data_switch" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/send_email_button_group"
+                android:layout_below="@+id/send_email_delete_title_textview"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/send_email_send_button"
+                    android:text="@string/send_button"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="6dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/send_email_cancel_button"
+                    android:text="@string/cancel"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="30dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/send_email_empty_textview_PLACEHOLDER"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_below="@id/send_email_button_group" />
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>
